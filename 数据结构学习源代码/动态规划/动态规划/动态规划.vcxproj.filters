@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="动态规划.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="递推问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="1容斥原理钱币关系.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="2爬楼梯.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="3数的划分.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="4数的计算.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5出栈排序的数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="6循环.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="7传球游戏.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="8，动态规划 数字三角形.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="9，0比1背包.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="10完全背包.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="11多重背包.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="12最长上升子序列.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="13最长公共子序列.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="14切割回文.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="15棋盘分割.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="16动态规划优化，乌龟棋.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="17状态重定义：扔鸡蛋.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="18优化转移过程 切割回文.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="19,过程转移，最长上升子序列.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="20,多重背包转移优化.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="21，多重背包单调队列.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="22,矩形.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="23,斜率优化.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="24低价购买.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="25，杂物.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="26,最大字串和.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="27,NASA的食物规划.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="28,魔族密码.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="29,找啊找.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="30，书本整理.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="31,垃圾陷阱.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="32最大正方形.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="33,三元上升子问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="34，多包背包.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="35，仓库建设.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

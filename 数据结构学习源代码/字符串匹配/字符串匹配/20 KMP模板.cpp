@@ -1,0 +1,54 @@
+﻿#include <iostream>
+#include <string>
+using namespace std;
+int main20()
+{
+/*
+	给定两个字符串 a,b，你要求出两个数组：
+b 的 z 函数数组 z，即 b 与 b 的每一个后缀的 LCP 长度。
+b 与 a 的每一个后缀的 LCP 长度数组 p。
+对于一个长度为 n 的数组 a，设其权值为 xor 
+i=1
+n​i×(a i+1)。
+*/
+	//此处反映出z函数可以用来进行单模匹配，遍历找到等于模式串的长度的z数组元素即可，其下标加1就是位置
+	long long ind1[100] = { 0 }, ind2[100] = { 0 };
+	string a, b;
+	cin >> a >> b;
+	int n1 = a.size(), n2 = b.size();
+	ind2[0] = n2;
+	long long l1 = -1, r1 = -1, l2 = -1, r2 = -1;
+	for (int i = 1;i < n2;i++)
+	{
+		if (i <= r2)ind2[i] = min(r2 - i + 1, ind2[i - l2]);
+		while (i+ind2[i] < n2 && b[ind2[i]] == b[i + ind2[i]])ind2[i]++;
+		if (i + ind2[i] - 1 > r2)
+		{
+			l2 = i;
+			r2 = i + ind2[i] - 1;
+		}
+	}
+	for (int i = 0;i < n1;i++)
+	{
+		if (i <= r1)ind1[i] = (min(r1 - i + 1,ind2[i - l1]));
+		while (ind1[i]+i < n1 && ind1[i]+i < n2 && a[i + ind1[i]] == b[ind1[i]])ind1[i]++;
+		if (i + ind1[i] - 1 > r1)
+		{
+			l1 = i;
+			r1 = ind1[i] + i - 1;
+		}
+	}
+	long long ans1 = 0, ans2 = 0;
+	for (int i = 0;b[i];i++)
+	{
+		ans1 ^= (i + 1) * (ind2[i]+1);
+	}
+	cout << ans1;
+	cout << endl;
+	for (int i = 0;a[i];i++)
+	{
+		ans2 ^= (i + 1) * (1+ind1[i]);
+	}
+	cout << ans2;
+	return 0;
+}

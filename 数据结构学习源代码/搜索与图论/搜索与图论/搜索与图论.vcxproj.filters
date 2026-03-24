@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="1 dfs n皇后问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="2 bfs 走迷宫.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="3 prim生成树.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="4 krustral 生成树.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5 二分图（染色法判断二分图）.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="6 二分图 匈牙利算法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="9 八重码.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="10 图的遍历，某个节点能到达的最大的点的编号.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="11 查找文献 求字典树最小序列.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="12 杂物.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="7 树的重心.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="13 最短路 dijstra.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="14 最短路  bell-ford.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="15 最短路：spfa.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="16 多源最短路 floy.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="17 关键路径.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="18 传送最短路.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

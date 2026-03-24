@@ -1,0 +1,73 @@
+﻿#define _CRT_SECURE_NO_WARNINGS
+#include <iostream>
+/*
+​ 有一天，小明同学捡到了一条价值连城宝石项链，他想知道项链的主人是谁。在得知此事后，很多人向小明发来了很多邮件，
+都说项链是自己的，要求他归还（显然其中最多只有一个人说了真话）。
+
+​ 小明要求每个人都写了一段关于自己项链的描述：
+
+​ 项链上的宝石用数字 0 至 9 来表示。一个对于项链的表示就是从项链的某个宝石开始，逆时针绕一圈，沿途记下经过的宝石，比如如下项链：
+
+
+
+​ 它的可能的四种表示是 0123,1230,2301,3012。
+
+​ 给定两个项链的表示，判断他们是否可能是一条项链。（注意，项链是不会翻转的）。
+
+
+*/
+//字符串的循环同构
+
+//字符串的最小表示法
+//在循环同构字符中字典序最小的那个字符
+//1 2 3 4 5 6 7 8       ab c d e f g
+//前一个从i开始，后一个从j开始，若是i+k>j+k,则i到i+k之间均不满足
+using namespace std;
+
+int find_the_min(const char* s)//找到最小表示法
+{
+	int i = 0, j = 1, k = 0;
+	int n = strlen(s);
+	while (i < n && j < n && k < n)
+	{
+		if (s[(i + k) % n] == s[(j + k) % n])k++;
+		else if (s[(i + k) % n] > s[(j + k) % n])
+		{
+			i = i + k + 1;
+			k = 0;
+		}
+		else
+		{
+			j = j + k + 1;
+			k = 0;
+		}
+		if (i == j)j += 1;
+	}
+	return min(i, j);
+}
+int main15()
+{
+	char s[10000] = { 0 }, t[10000] = { 0 };
+	cin >> s >> t;
+	int min_s = find_the_min(s), min_t = find_the_min(t);
+	int n=strlen(t);
+	int flag = 1;
+	for (int i = min_s, j = min_t, N = 0;N < n;N++)
+	{
+		if (s[(i + N) % n] == t[(j + N) % n])continue;
+		flag = 0;
+		break;
+	}
+	if (flag)
+	{
+		cout << "YES" << endl;
+		for (int i = 0;i < n;i++)
+		{
+			printf("%c", s[(min_s + i) % n]);
+		}
+		cout << endl;
+	}
+	else
+		cout << "NO\n";
+	return 0;
+}
